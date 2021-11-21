@@ -1,0 +1,46 @@
+@import "@assets/shared-scss/_variables.scss";
+$menu-button-font: 60px;
+
+.menu-buttons {
+    position: relative;
+    margin-top: 10px;
+    width: 755px;
+    z-index: 12;
+
+    &__buttons-list {
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 4px;
+    }
+
+    &__button {
+        text-shadow: 2px 1.5px 1px #200303;
+        font-size: $menu-button-font;
+        font-family: "Viruses menu";
+        margin: 0 auto 40px;
+        width: fit-content;
+        user-select: none;
+        cursor: pointer;
+        display: block;
+        color: #FFF;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        // react-router-dom link
+        a {
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+
+    &__picker {
+        transition: 1s all ease-in-out;
+        position: absolute;
+        height: 105px;
+        width: 385px;
+        // initially hidden
+        top: 100vh;
+        left: 0;
+    }
+}

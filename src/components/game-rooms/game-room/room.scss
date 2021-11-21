@@ -1,0 +1,35 @@
+@import "@assets/shared-scss/_variables.scss";
+@import "@assets/shared-scss/blackout.scss";
+
+.game-room {
+    font-family: "Viruses regular";
+    cursor: pointer;
+    padding: 0 15px;
+
+    &:last-child &__wrapper {
+        border-bottom: 0;
+    }
+
+    &:hover {
+        background: #2E2B24;
+    }
+
+    &__wrapper {
+        border-bottom: 2px solid black;
+        align-items: center;
+        padding: 10px 7px;
+        display: flex;
+    }
+
+    &__element {
+        margin-left: 30px;
+        width: 160px;
+    }
+
+    &__avatar {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+    }
+}

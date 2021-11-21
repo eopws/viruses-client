@@ -1,0 +1,119 @@
+.game-shop {
+    user-select: none;
+    right: -50%;
+
+    &--show {
+        right: 0;
+    }
+
+    &__wrapper {
+        border-left: 3px solid black;
+        // minus padding
+        height: calc(100% - 20px);
+        box-sizing: content-box;
+        background: #830d1d;
+        margin-left: 13px;
+        padding: 10px;
+    }
+
+    &__money-amount {
+        font-family: "Viruses regular";
+        font-size: 40px;
+        color: #FFF;
+
+        .emphasis {
+            color: yellow;
+        }
+    }
+}
+
+.products-list {
+    max-height: 100%;
+    overflow: auto;
+}
+
+.products-list-item {
+    border-bottom: 3px solid black;
+    font-family: "Viruses regular";
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    &__wrapper {
+        justify-content: left;
+        padding: 10px 0;
+        display: flex;
+    }
+
+    &__image-container {
+        position: relative;
+        min-height: 60px;
+        min-width: 60px;
+
+        canvas {
+            transform: translateY(-50%);
+            position: absolute;
+            max-height: 100%;
+            max-width: 100%;
+            top: 50%;
+        }
+    }
+
+    &__content {
+        margin-left: 10px;
+    }
+
+    &__title {
+        align-items: center;
+        white-space: nowrap;
+        font-size: 50px;
+        color: #FFF;
+        display: flex;
+    }
+
+    &__add {
+        transition: .5s all ease-in-out;
+        text-shadow: -2px 2px black;
+        border: 2px solid #FFF;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin-left: 15px;
+        line-height: 1.1;
+        font-size: 40px;
+        height: 40px;
+        width: 40px;
+
+        &:hover {
+            background: #FFF;
+            text-shadow: none;
+            color: #830d1d;
+            cursor: pointer;
+        }
+    }
+
+    &__buy-info {
+        align-items: center;
+        color: #241003;
+        display: flex;
+    }
+
+    &__price {
+        font-size: 30px;
+    }
+
+    &__buy-btn {
+        background: #fbf236;
+        margin-left: 15px;
+        font-size: 30px;
+        border: 0;
+    }
+
+    &__gotten-qty {
+        margin-left: 15px;
+        font-size: 25px;
+        color: #FFF;
+    }
+}
+

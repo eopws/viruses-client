@@ -1,0 +1,118 @@
+@import "@assets/shared-scss/_variables.scss";
+@import "@assets/shared-scss/blackout.scss";
+
+.game-rooms-container {
+    background-color: #B51111;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.game-rooms {
+    z-index: $blackout-z-index + 2;
+    border: 2px solid black;
+    background: #3A362B;
+    position: relative;
+    height: 90%;
+    width: 90%;
+
+    &__list {
+        max-height: calc(100% - 100px);
+        overflow-y: auto;
+    }
+}
+
+.create-room {
+    background: #2e2b24;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    &__wrapper {
+        justify-content: left;
+        align-items: center;
+        padding: 0 15px;
+        display: flex;
+        height: 100%;
+    }
+
+    &__element {
+        margin-right: 50px;
+    }
+
+    &__field-size-input {
+        width: 200px;
+    }
+
+    &__players-input {
+        width: 34px;
+    }
+
+    &__room-name {
+        width: 200px;
+    }
+
+    &__start-btn {
+        font-family: "Viruses regular";
+        border: 2px solid black;
+        background: #FFC743;
+        font-size: 30px;
+    }
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    min-height: 60px;
+    min-width: 60px;
+    height: 60px;
+    width: 60px;
+}
+
+.room-naming {
+    &__name {
+        line-height: .75;
+        font-size: 40px;
+        display: block;
+        color: #FFF;
+    }
+
+    &__creator {
+        font-size: 30px;
+        display: block;
+        color: #2E2B24;
+    }
+}
+
+.create-room-element {
+    align-items: center;
+    display: flex;
+
+    &__icon {
+        margin-right: 15px;
+    }
+
+    &__text {
+        align-items: center;
+        display: flex;
+    }
+
+    &__value-separator {
+        font-family: "Viruses regular";
+        font-size: 60px;
+        color: #FFF;
+    }
+
+    &__value-label {
+        font-family: "Viruses regular";
+        margin-right: 10px;
+        font-size: 60px;
+        color: #FFF;
+    }
+}

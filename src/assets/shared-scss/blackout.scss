@@ -1,0 +1,10 @@
+.blackout {
+    z-index: $blackout-z-index;
+    background: #000;
+    position: absolute;
+    opacity: .66;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}

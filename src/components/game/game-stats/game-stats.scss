@@ -1,0 +1,145 @@
+.game-stats {
+    background-color: black;
+    border: 3px solid black;
+
+    &__wrapper {
+        display: flex;
+        height: 500px;
+        width: 1000px;
+    }
+
+    &__players-list {
+        box-sizing: border-box;
+        flex: 0 0 35%;
+    }
+
+    &__stats-table {
+        background: #3A362B;
+        flex: 0 0 65%;
+    }
+}
+
+.stats-players-list {
+    border-right: 5px solid black;
+    background: #2E2B24;
+    position: relative;
+    height: 100%;
+}
+
+.stats-tab {
+    border-bottom: 3px solid black;
+    font-family: "Viruses regular";
+    align-items: center;
+    position: relative;
+    user-select: none;
+    cursor: default;
+    display: flex;
+    padding: 10px;
+
+    &--active {
+        background: #3A362B;
+
+        &::before {
+            transform: translateY(-50%);
+            background-color: #3A362B;
+            display: inline-block;
+            position: absolute;
+            height: 50px;
+            right: -6px;
+            content: "";
+            width: 7px;
+            top: 50%;
+        }
+
+        &::after {
+            background: url('./triangle.svg') center center no-repeat;
+            transform: translateY(-50%);
+            background-size: contain;
+            display: inline-block;
+            position: absolute;
+            height: 51px;
+            right: -30px;
+            width: 30px;
+            content: "";
+            top: 50%;
+        }
+    }
+
+    &__player-avatar {
+        max-height: 90px;
+        max-width: 90px;
+
+        img {
+            max-height: 90px;
+            max-width: 90px;
+        }
+    }
+
+    &__text {
+        margin-left: 15px;
+        width: 150px;
+    }
+
+    &__player-nickname {
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 35px;
+        display: block;
+        color: #FFF;
+    }
+
+    &__win-state {
+        text-transform: uppercase;
+        font-size: 30px;
+        display: block;
+
+        &--winner {
+            color: #FBF236;
+        }
+
+        &--loser {
+            color: #F00;
+        }
+    }
+
+    &__icon {
+        margin-left: auto;
+    }
+}
+
+.stats-table {
+    font-family: "Viruses regular";
+    padding: 5px 20px 5px 35px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+
+    &__body {
+        overflow-y: auto;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        color: #FFF;
+    }
+
+    &__row {
+        border-bottom: 3px solid black;
+        font-size: 25px;
+        padding: 5px 10px;
+        color: #FFF;
+        display: flex;
+
+        &:first-child {
+            border-top: 3px solid black;
+        }
+    }
+
+    &__value {
+        margin-left: auto;
+    }
+}

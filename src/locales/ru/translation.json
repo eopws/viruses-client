@@ -1,0 +1,21 @@
+{
+	"main-menu": {
+		"playBtn": "играть",
+		"settingsBtn": "настройки",
+		"statsBtn": "статистика",
+		"quitBtn": "выход",
+		"createVirusBtn": "создать вирус",
+		"nickLabel": "ник",
+		"SFXLabel": "спецэффекты",
+		"bgMusicLabel": "фоновая музика",
+		"languageLabel": "язык",
+		"soundLabel": "звуки",
+		"playerLabel": "Игрок",
+		"gameSettingsLabel": "настройки игры"
+	},
+	"shop": {
+		"teslaLabel": "тесла",
+		"catapultLabel": "катапульта",
+		"hardWallLabel": "крепкая стенка"
+	}
+}

@@ -1,0 +1,163 @@
+@import "@assets/shared-scss/_variables.scss";
+
+.settings-modal {
+    z-index: $menu-page-blur-z-index + 2;
+    transform: translate(-50%, -50%);
+    //background: #3A362B;
+    position: absolute;
+    //border: 7px solid;
+    display: none;
+    left: 50%;
+    top: 50%;
+
+    height: 50%;
+    width: 50%;
+
+    &--show {
+        display: block;
+    }
+
+    &__wrapper {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 100%;
+        display: flex;
+    }
+
+    &__top {
+        //border-bottom: 2px solid #000;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    &__title {
+        font-family: "Viruses regular";
+        text-transform: uppercase;
+        font-size: 30px;
+        color: #FFF;
+    }
+}
+
+.settings-modal-body {
+    overflow: auto;
+    height: 100%;
+
+    &__block {
+        &-title {
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 4px;
+            font-family: "Viruses menu";
+            text-transform: uppercase;
+            padding: 20px 0 0 20px;
+            font-size: 40px;
+            color: #FFF;
+        }
+    }
+}
+
+.settings-group {
+    margin-top: 15px;
+
+    &__item {
+        font-family: "Viruses regular";
+        height: 70px;
+
+        &-wrapper {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            margin: 0 20px;
+            height: 100%;
+        }
+
+        /*&:not(:nth-child(2n)) {
+            background: #2E2B24;
+        }*/
+
+        &-left,
+        &-right {
+            box-sizing: border-box;
+            display: inline-block;
+            font-size: 50px;
+            max-width: 50%;
+            flex: 1;
+        }
+
+        &-right {
+            padding-left: 20px;
+        }
+
+        &-left {
+            text-transform: uppercase;
+            padding-right: 20px;
+            padding-left: 75px;
+            overflow: hidden;
+            color: #FFF;
+
+            &-wrapper {
+                overflow: hidden;
+            }
+
+            span {
+                white-space: nowrap;
+                display: block;
+            }
+        }
+    }
+}
+
+
+// scrollbar
+
+
+::-webkit-scrollbar {
+    width: 9px; /* vertical scrollbar height */
+    height: 0; /* horizontal scrollbar height */
+    background-color: #27241F;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #161613;
+    border-radius: 0;
+}
+
+/* Arrows */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+    height: 0;
+    width: 0;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+    height: 0;
+    width: 0;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+    height: 0;
+    width: 0;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+    height: 0;
+    width: 0;
+}

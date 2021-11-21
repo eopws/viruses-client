@@ -1,0 +1,128 @@
+.game-chat {
+    background: #830d1d;
+    max-width: 300px;
+    left: -50%;
+
+    &--show {
+        left: 0;
+    }
+
+    &__messages {
+        height: calc(100% - 50px);
+        box-sizing: border-box;
+        overflow: auto;
+        padding: 10px;
+    }
+}
+
+.game-chat-message {
+    font-family: "Viruses regular";
+    justify-content: left;
+    padding: 6px 0;
+    display: flex;
+
+    &__avatar-container {
+        min-height: 50px;
+        min-width: 50px;
+        height: 50px;
+        width: 50px;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__message-body {
+        margin-left: 15px;
+    }
+
+    &__nickname {
+        font-size: 30px;
+        color: #FFF;
+    }
+
+    &__top-line-separator {
+        display: inline-block;
+        background: #000;
+        margin: 0 9px;
+        height: 17px;
+        width: 3px;
+    }
+
+    &__time {
+        color: #0f0f0f;
+        font-size: 30px;
+    }
+
+    &__text {
+        word-break: break-word;
+        font-size: 25px;
+        color: #000;
+    }
+
+    .mention {
+        background: #414675;
+        border-radius: 4px;
+        padding: 2px 5px;
+        color: #FFF;
+
+        &:hover {
+            background: #5865F2;
+        }
+    }
+}
+
+.add-chat-message-form {
+    border-top: 3px solid black;
+    box-sizing: border-box;
+    position: relative;
+    padding: 5px;
+    height: 50px;
+
+    &__input {
+        font-family: "Viruses regular";
+        box-sizing: border-box;
+        padding-right: 50px;
+        font-size: 25px;
+        height: 100%;
+        width: 100%;
+        border: 0;
+    }
+
+    &__send-icon {
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        background-size: cover;
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        height: 30px;
+        width: 41px;
+        right: 10px;
+        top: 50%;
+    }
+}
+
+.chat-notification {
+    font-family: "Viruses regular";
+    box-sizing: content-box;
+    transition: 1s all ease;
+    background: #830d1d;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #FFF;
+    padding: 10px;
+    z-index: 10;
+    top: -100%;
+    left: 10px;
+
+    text-align: center;
+    height: 30px;
+    width: 30px;
+
+    &--show {
+        top: 10%;
+    }
+}

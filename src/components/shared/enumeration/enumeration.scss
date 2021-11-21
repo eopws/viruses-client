@@ -1,0 +1,24 @@
+.language-picker {
+    user-select: none;
+
+    &__item {
+        display: inline-block;
+        color: #FFF;
+
+        span {
+            cursor: pointer;
+
+            &.active,
+            &:hover {
+                color: yellow;
+            }
+        }
+
+        &:not(:last-child) {
+            &::after {
+                content: "|";
+
+            }
+        }
+    }
+}

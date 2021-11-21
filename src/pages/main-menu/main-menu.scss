@@ -1,0 +1,52 @@
+@import "@assets/shared-scss/_variables.scss";
+@import "@assets/shared-scss/blackout.scss";
+
+body {
+    overflow: hidden;
+}
+
+.menu-page {
+    background-repeat: no-repeat;
+    background-position: 95% 70%;
+    background-color: $bg-color;
+    height: 100vh;
+    width: 100vw;
+
+    @media (min-width: $media-big) {
+        background-size: 50%;
+    }
+
+    &__left {
+        max-width: 55%;
+
+        @media (min-width: $media-big) {
+            max-width: 45%;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 40px;
+        margin-left: -40px;
+        padding-top: 20px;
+        width: 100%;
+
+        div {
+            z-index: $blackout-z-index + 2;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: relative;
+            height: 360px;
+        }
+    }
+}
+
+.vesion-info {
+    z-index: $blackout-z-index + 2;
+    font-family: "Viruses regular";
+    position: absolute;
+    font-size: 40px;
+    color: #FFF;
+    bottom: 10px;
+    right: 10px;
+}

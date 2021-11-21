@@ -1,0 +1,20 @@
+{
+	"main-menu": {
+		"playBtn": "PLAY",
+		"settingsBtn": "SETTINGS",
+		"createVirusBtn": "create virus",
+		"quitBtn": "quit",
+		"nickLabel": "nickname",
+		"SFXLabel": "SFX",
+		"bgMusicLabel": "background music",
+		"languageLabel": "language",
+		"soundLabel": "sound",
+		"playerLabel": "player",
+		"gameSettingsLabel": "game settings"
+	},
+	"shop": {
+		"teslaLabel": "tesla",
+		"catapultLabel": "catapult",
+		"hardWallLabel": "hard wall"
+	}
+}

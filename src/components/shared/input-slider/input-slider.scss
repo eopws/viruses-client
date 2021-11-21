@@ -1,0 +1,17 @@
+.input-slider {
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 52px;
+
+    &__thumb {
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        padding: inherit;
+        cursor: pointer;
+        height: 52px;
+        // default value
+        left: 10px;
+    }
+}

@@ -1,0 +1,40 @@
+.game-over-message {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: none;
+    z-index: 40;
+    left: 50%;
+    top: 50%;
+
+    &--show {
+        display: block;
+    }
+
+    &__title {
+        font-family: "Viruses regular";
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        color: #FFF;
+    }
+}
+
+.to-menu-btn {
+    font-family: "Viruses regular";
+    border: 5px solid #2E2B24;
+    background: #3A362B;
+    position: absolute;
+    font-size: 30px;
+    color: #FFF;
+    z-index: 40;
+    left: 10px;
+    top: 10px;
+
+    &:hover {
+        background: #2E2B24;
+    }
+
+    &--hide {
+        display: none;
+    }
+}

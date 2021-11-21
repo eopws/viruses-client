@@ -1,0 +1,14 @@
+.game-info-bar {
+    transform: translateX(-50%);
+    transition: all 1s ease;
+    pointer-events: none;
+    background: #FFF;
+    position: absolute;
+    z-index: 10;
+    top: -100%;
+    left: 50%;
+
+    &--show {
+        top: 0;
+    }
+}

@@ -1,0 +1,11 @@
+.number-field {
+    font-family: "Viruses regular";
+    display: inline-block;
+    font-size: 37px;
+    height: 35px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
